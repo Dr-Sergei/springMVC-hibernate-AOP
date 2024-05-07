@@ -61,6 +61,7 @@
             <version>0.9.5.5</version>
         </dependency>
 
+
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
         <!-- object relational mapping what allows us to display the java objects as a tables rows in mySql-->
         <dependency>
@@ -76,6 +77,7 @@
 
             <!-- war plugin-->
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.3.2</version>
                 <configuration>
