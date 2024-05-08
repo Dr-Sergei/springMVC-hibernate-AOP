@@ -9,4 +9,8 @@ table {
     text-align: center;
     background: greenyellow;
     font-size:large;
+    padding: 10px;
+}
+tr{
+    padding:10 px;
 }
