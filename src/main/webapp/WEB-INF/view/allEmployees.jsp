@@ -13,27 +13,36 @@
 
     <body>
         <h1>All Employees</h1>
-            <table>
+            <div class="panel">
+            <table class="table">
                 <h2>
                 <tr>
                     <th class="th">Name</th>
                     <th class="th">Surname</th>
                     <th class="th">Department</th>
                     <th class="th">Salary</th>
+                    <th class="th">Operations</th>
                 </tr>
                 </h2>
                 <c:forEach var="emp" items="${allEmps}">
+                    <c:url var="updateButton" value="/updateInfo">
+                        <c:param name="empId" value="${emp.id}"/>
+                    </c:url>
                     <tr>
                         <td class="td">${emp.name}</td>
                         <td class="td">${emp.surname}</td>
                         <td class="td">${emp.department}</td>
                         <td class="td">${emp.salary}</td>
+                        <td class="td">
+                            <input type="button" value="Update" class="button"
+                                onclick="window.location.href='${updateButton}'"/>
+                        </td>
                     </tr>
                 </c:forEach>
             </table>
             <br/>
-            <input type="button" value="add"
+            <input type="button" value="add" class="button"
                 onclick="window.location.href='addNewEmployee'"/>
-
+            </div>
     </body>
 </html>

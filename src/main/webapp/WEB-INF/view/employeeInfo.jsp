@@ -9,19 +9,29 @@
             <title>Employee Info</title>
     </head>
     <body>
-        <h2>Employee Info</h2>
+        <h1>Employee Info</h1>
         <br/>
-
         <form:form action="saveEmployee" method="POST" modelAttribute="employee">
-            Name: <form:input path="name"/>
-            <br/>
-            Surname: <form:input path="surname"/>
-            <br/>
-            Department: <form:input path="department"/>
-            <br/>
-            Salary: <form:input path="salary"/>
-            <br/>
-            <input type="submit" value="ok">
+
+            <form:hidden path="id"/>
+
+            <div class="panel">
+                <div class="table">
+                    <label for="name" class="lbl1">Name: </label>
+                    <form:input path="name" class="txtF"/>
+                    <br/>
+                    <label for="surname" class="lbl2">Surname: </label>
+                    <form:input path="surname" class="txtF"/>
+                    <br/>
+                    <label for="department" class="lbl3">Department: </label>
+                    <form:input path="department" class="txtF"/>
+                    <br/>
+                    <label for="salary" class="lbl4">Salary: </label>
+                    <form:input path="salary" class="txtF"/>
+                    <br/>
+                </div>
+                <input type="submit" value="ok" class="button">
+            </div>
 
         </form:form>
     </body>

@@ -4,17 +4,42 @@ h1 {
     color: blue;
 }
 
-table {
-    margin: 0 auto;
+ .table {
+    margin: 5px auto;
     text-align: center;
     background: greenyellow;
     font-size: 1.7rem;
     padding: 10px;
     border: 5px solid lightcoral;
     border-style: inset;
+    text-align:left;
 }
-
+.panel{
+    margin: 0 auto;
+    text-align:center;
+    width:500px;
+}
+.button{
+    width: 150px;
+    height: 30px;
+    background-color: lightgoldenrodyellow;
+}
 .td,
 .th {
     padding: 10 px;
 }
+.txtF{
+    margin-left: 30px;
+}
+ .lbl1{
+    margin-right:65px;
+ }
+  .lbl2{
+    margin-right:30px;
+ }
+  .lbl3{
+    margin-right:-5px;
+ }
+  .lbl4{
+    margin-right:64px;
+ }
