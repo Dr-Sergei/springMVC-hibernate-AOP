@@ -25,17 +25,26 @@
                 </tr>
                 </h2>
                 <c:forEach var="emp" items="${allEmps}">
+
                     <c:url var="updateButton" value="/updateInfo">
                         <c:param name="empId" value="${emp.id}"/>
                     </c:url>
+
+                    <c:url var="deleteButton" value="/deleteEmployee">
+                        <c:param name="empId" value="${emp.id}"/>
+                    </c:url>
+
                     <tr>
                         <td class="td">${emp.name}</td>
                         <td class="td">${emp.surname}</td>
                         <td class="td">${emp.department}</td>
                         <td class="td">${emp.salary}</td>
                         <td class="td">
-                            <input type="button" value="Update" class="button"
-                                onclick="window.location.href='${updateButton}'"/>
+                             <input type="button" value="Update" class="button"
+                                onClick="window.location.href='${updateButton}'"/>
+
+                             <input type="button" value="Delete" class="button"
+                                onClick="window.location.href='${deleteButton}'"/>
                         </td>
                     </tr>
                 </c:forEach>
